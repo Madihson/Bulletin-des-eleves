@@ -17,7 +17,7 @@ let recupJson = async () => {
             <div class="card-text">
               Moyenne : <strong>${eleve.moyenne}</strong><br>
               Rang : <strong>${eleve.rang}</strong><br>
-              Appréciation : <em>${eleve.appreciation}</em>
+              Appréciation : < em>${eleve.appreciation}</>
             </div>
           </div>
         </div>
@@ -26,12 +26,32 @@ let recupJson = async () => {
   });
 
   div.innerHTML = contenu;
-  let cardText=document.querySelectorAll(".card-text");
-  let infoEleve=document.querySelector(".info-eleve");
+
+  let cardTextList = document.querySelectorAll(".card-body");
+  let infoEleve = document.querySelector("#info-eleve");
   
+
+  cardTextList.forEach(function (element) {
+    element.addEventListener("click", function () {
+      
+      console.log(this)
+      infoEleve.innerHTML = this.innerHTML;
+      document.querySelector("#info-eleve").style.display = "block";
+      document.querySelector(".show").style.display = "flex";
+    });
+  });
+
+  
+
 };
 
 btn.addEventListener("click", recupJson);
+
+
+
+
+
+
 
 
 
