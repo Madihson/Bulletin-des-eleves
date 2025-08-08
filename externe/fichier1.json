@@ -1,0 +1,14 @@
+{
+  "eleves": [
+    {
+      "prenom": "Abdoul",
+      "nom": "Koné",
+      "age": 15
+    },
+    {
+      "prenom": "Kader",
+      "nom": "Traoré",
+      "age": 14
+    }
+  ]
+}

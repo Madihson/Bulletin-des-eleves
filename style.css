@@ -1,0 +1,10 @@
+.card-body{
+    cursor: pointer;
+}
+
+.card-body:hover{
+    transition: 2s;
+    background: rgb(176, 176, 245);
+    box-shadow: 5px 5px rgb(58, 54, 54, 0.1);
+}
+

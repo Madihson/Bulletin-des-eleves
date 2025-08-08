@@ -1,0 +1,76 @@
+{
+    "ville":"abidjan",
+    "population": null,
+    "attraction":["La baselique", "la tour F", "le 4e pont"],
+    "meteo":{
+        "temperature":19,
+        "pluie":false
+    }
+},
+
+{
+    "nom":"carl",
+    "message": "Ceci est mon message \n concernant ce cours.",
+    "departement":75,
+    "couleur":["bleu", "rouge", "vert"],
+    "personne":{
+        "prenom":"jean",
+        "nom":"kouassi"
+    }
+},
+//number, boolean, null
+{
+    "quantité": 2,
+    "prix unitaire":4.56,
+    "exposant":1.5e3,
+    "mailling":false,
+    "prenom":null,
+    "nom":"traoré"
+},
+
+// les tableaux
+{
+    "tableau":["kouassi", "bernard",1,1.5,null,true],
+    "contact": [
+        ["koukou", "anini", "0102568975"],
+        ["koné", "dramane", "0548666632"]
+    ],
+
+    "personnes":[
+        {"nom": "jean", "ville": "paris"},
+        {"nom":"aboua", "ville": "buyo"}
+    ]
+},
+
+//objet
+{
+    "personne":{
+        "prenom":"jean",
+        "nom": "diaby",
+        "adresse":null,
+        "age": 45
+    }
+}
+
+[
+    {
+        "id":1,
+        "produit":"prod 1",
+        "tarif":15.4
+    },
+
+    {
+        "id":2,
+        "produit":"prod 2",
+        "tarif":20
+    },
+    
+    {
+        "id":3,
+        "produit":"prod 3",
+        "tarif":50
+    }
+]
+
+
+
