@@ -1,10 +1,66 @@
-.card-body{
-    cursor: pointer;
+/* style.css */
+
+/* Définir la police globale */
+body {
+  font-family: sans-serif;
+  background-color: #f8f9fa;
+  color: #343a40;
 }
 
-.card-body:hover{
-    transition: 2s;
-    background: rgb(176, 176, 245);
-    box-shadow: 5px 5px rgb(58, 54, 54, 0.1);
+/* Titre principal */
+h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #0d6efd;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
+/* Bouton */
+.btn-primary {
+  background-color: #0d6efd;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  transform: scale(1.05);
+}
+
+/* Carte élève */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  background: aliceblue;
+}
+
+.card-title {
+  font-weight: bold;
+  color: #212529;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #6c757d;
+  cursor: pointer;
+}
+
+/* Responsive grille */
+#liste-eleves .col {
+  min-width: 250px;
+}
+
+/* Container */
+.container {
+  max-width: 960px;
+}

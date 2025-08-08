@@ -1,6 +1,7 @@
 let btn = document.querySelector("button");
 let div = document.querySelector("#liste-eleves");
 
+
 let recupJson = async () => {
   let result = await fetch('externe/eleves_bulletin.json'); // vérifie que le chemin est correct
   let data = await result.json();
@@ -25,9 +26,14 @@ let recupJson = async () => {
   });
 
   div.innerHTML = contenu;
-
-
+  let cardText=document.querySelectorAll(".card-text");
+  let infoEleve=document.querySelector(".info-eleve");
+  
 };
 
 btn.addEventListener("click", recupJson);
+
+
+
+
 
