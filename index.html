@@ -4,24 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bulletin des élèves</title>
+  
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- fichier CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container py-5">
-    <h1 class="mb-4 text-center">Bulletin des élèves</h1>
+    <h1 class="text-center mb-4">Bulletin des élèves</h1>
+
+    <!-- Bouton pour charger les données -->
     <div class="text-center mb-4">
-      <button class="btn btn-primary">Afficher le contenu du JSON</button>
+      <button id="btn-charger-eleves" class="btn btn-primary">Afficher les bulletins</button>
     </div>
+
+    <!-- Liste des cartes élèves -->
     <div id="liste-eleves" class="row g-4"></div>
   </div>
-  <div class="show justify-content-center">
-    <div id="info-eleve" class="info-eleve p-4 shadow rounded"></div>
+
+  <!-- Zone de détails (pop-up) -->
+  <div class="block-detail">
+    <div class="zone-details justify-content-left">
+      <button id="fermer-details" class="btn btn-secondary mt-3">Fermer</button>
+      <div id="info-eleve" class="info-eleve p-4 shadow rounded"></div>
+    </div>
   </div>
 
-
+  <!-- JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>

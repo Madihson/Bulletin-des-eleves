@@ -8,6 +8,7 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
+  overflow: scroll;
 }
 
 /* Titre principal */
@@ -68,30 +69,52 @@ h1 {
   max-width: 960px;
 }
 
-.show {
-  position: fixed;
-  top: 0;
-  left: 0;
+.block-detail{
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.6); /* fond semi-transparent */
-  display: none; /* Masquée par défaut */
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
+  background: rgba(74, 71, 71, 0.5);
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#fermer-details{
+  width: 100px;
+  height: 40px;
+  margin: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 99;
+}
+
+#fermer-details:hover{
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+.zone-details{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 600px;
+  width: 500px;
 }
 
 .info-eleve {
-    display: none;
-    background-color: #ffffff;
-    border-left: 5px solid #0d6efd;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.3);
-    max-width: 600px;
-    width: 90%;
-    text-align: center;
+  display: none;
+  background-color: #ffffff;
+  border-left: 5px solid #0d6efd;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+  text-align: left;
 }
 
